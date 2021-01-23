@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+    crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+</head>
+<body>
+    <div class="container">
+    <form action="cal.php" method="GET">
+        <div class="mb-3">
+            <label class="form-label">N1</label>
+            <input type="number" class="form-control"  name="n1">
+           
+          </div>
+
+          <select class="form-select" name="calu" action="cal.php" method="GET">
+            <option selected>Escolha a operação:</option>
+            <option value="1">+</option>
+            <option value="2">-</option>
+            <option value="3">*</option>
+            <option value="4">/</option>
+          </select>
+
+          <div class="mb-3">
+            <label class="form-label">N2</label>
+            <input type="number" class="form-control"  name="n2" >
+           
+          </div>
+                 
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
